@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
-
+// import Head from "next/head";
+import Header from "./Header";
 const links = [
   { href: "/about", label: "About" },
   { href: "/adam", label: "Creator" }
@@ -12,10 +12,7 @@ const links = [
 
 const Nav = () => (
   <div>
-    <Head>
-      <title>Aurelius</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <Header />
 
     <nav>
       <ul>
@@ -37,8 +34,8 @@ const Nav = () => (
     <style jsx>{`
       :global(body) {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
+        font-family: Cinzel, -apple-system, BlinkMacSystemFont, Avenir Next,
+          Avenir, Helvetica, sans-serif;
         color: black;
         background: tan;
       }
