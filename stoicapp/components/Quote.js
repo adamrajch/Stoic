@@ -18,19 +18,23 @@ const Quote = () => {
     }
     fetchData();
   }, []);
-
+  const quoteForm = `"${todaysQuote}"`;
   return (
     <div className="quotesStyle">
       <Title level={2} underline>
-        {" "}
-        Daily Quote{" "}
+        Daily Quote
       </Title>
-      <Title level={4}> {todaysQuote} </Title>
+      <div className="todayQuote">
+        <Title level={4}>{quoteForm}</Title>
+      </div>
       <Title level={4}> {todaysAuthor} </Title>
       <style jsx>
         {`
           .quotesStyle {
             margin-top: 64px;
+          }
+          .todayQuote {
+            font-style: italic;
           }
         `}
       </style>

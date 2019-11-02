@@ -7,7 +7,7 @@ const Hero = () => {
     <Container>
       <div className="hero">
         <Title underline> Aurelius </Title>
-        <Title level={3}>Simple Stoic App</Title>
+        <Title level={3}>Stoic Training</Title>
         {/* <Quote /> */}
       </div>
       <style jsx>

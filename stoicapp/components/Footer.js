@@ -16,6 +16,7 @@ const Footer = () => (
       }
       .adamFoot {
         margin-top: 36px;
+        font-size: 10px;
       }
     `}</style>
   </div>

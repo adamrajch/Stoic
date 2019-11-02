@@ -4,12 +4,21 @@ import Container from "@material-ui/core/Container";
 import Footer from "./Footer";
 const Layout = Page => {
   return () => (
-    <Container>
-      <Nav />
-      <Hero />
-      <Page />
-      <Footer />
-    </Container>
+    <div className="layoutStyle">
+      <Container>
+        <Nav />
+        <Hero />
+        <Page />
+        <Footer />
+      </Container>
+      <style jsx>
+        {`
+          .layoutStyle {
+            background-color: tan;
+          }
+        `}
+      </style>
+    </div>
   );
 };
 
